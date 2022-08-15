@@ -10,7 +10,7 @@
     tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/counterTv"
+        android:id="@+id/text_view_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -19,7 +19,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/incrementBtn"
+        android:id="@+id/button_increment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/page_margin"
@@ -30,7 +30,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/descrementBtn"
+        android:id="@+id/button_descrement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/page_margin"

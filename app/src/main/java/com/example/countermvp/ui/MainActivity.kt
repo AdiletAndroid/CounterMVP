@@ -24,17 +24,17 @@ class MainActivity : AppCompatActivity(), CounterView {
 
     private fun initClicker() {
         with(binding) {
-            incrementBtn.setOnClickListener {
+            buttonIncrement.setOnClickListener {
                 presenter.increment()
             }
-            descrementBtn.setOnClickListener {
+            buttonDescrement.setOnClickListener {
                 presenter.decrement()
             }
         }
     }
 
     override fun updateText(count: Int) {
-        binding.counterTv.text = count.toString()
+        binding.textViewCounter.text = count.toString()
     }
 
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), CounterView {
 
 
     @SuppressLint("ResourceAsColor")
-    override fun textColorChange() {
-        binding.counterTv.setTextColor(R.color.green)
+    override fun changeTextColor(color: Int) {
+        binding.textViewCounter.setTextColor(color)
     }
 }
